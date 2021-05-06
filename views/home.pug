@@ -1,0 +1,44 @@
+extends base.pug
+
+block scripts
+    script(src="/static/index.js")
+block style
+    style
+        include ../static/style.css
+block content
+    
+    section#intro
+        div.bold  Welcome to best dance academy in universe
+        div       Dance | Enjoy | Relax
+    section#mission
+        h1 Our mission 
+        div.card 
+            h3 Free from stress
+            div.card-box
+                div.card-img
+                    img(src="/static/dnimg2.png") 
+        div.card 
+            h3 Dance the way you like
+            div.card-box
+                div.card-img
+                    img(src="/static/dnimg3.png") 
+        div.card 
+            h3 Enjoy Yourself
+            div.card-box
+                div.card-img
+                    img(src="/static/dnimg4.png") 
+        
+    section#sponser
+        h1 our sponsers
+        div#sponserdiv
+            img(src="/static/hp.png" alt="hplogo" class="imgsp")
+            img(src="/static/mc.png" alt="hplogo" class="imgsp")
+            img(src="/static/apl.png" alt="hplogo" class="imgsp")
+    footer#footer
+        div 
+            | &copy Rishabh sharma
+        div
+            | for more info vist www.bestdance.com    
+
+    script
+        include ../static/index.js        
